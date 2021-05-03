@@ -1,0 +1,56 @@
+% !TEX TS-program = luatex
+% Awesome Source CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/awesome-neue-latex-cv
+%
+% Author:
+% Christophe Roger (Darwiin)
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+\documentclass[localFont,alternative]{yaac-another-awesome-cv}
+
+\usepackage{lastpage}
+\usepackage{datetime}
+\usepackage{setspace}
+\usepackage{makecell}
+\usepackage[export]{adjustbox}
+
+\name{Luciano Mateias}
+\tagline{Tecnico informatico | Sviluppatore}	
+\photo{2.5cm}{fototessera}
+\socialinfo{
+	\linkedin{lucianomateias}
+	\github{mrlucio}\\
+	\smartphone{+39 329 277 6702}
+	\email{mateiasluciano@gmail.com}\\
+	\address{Via dell'esperanto 12, 37135 Verona}\\
+}
+
+\begin{document}
+
+	\makecvheader
+
+	\makecvfooter
+		{\textsc{\formatdate{3}{5}{2021}}} % \today
+		{\textsc{Luciano Mateias - CV}}
+		{\thepage\ di \pageref{LastPage}}	
+
+	\input{section_headline}
+	%\input{section_competences}			% Competences section
+	\input{section_experiences}				% Experiences section
+	\input{section_schooling}				% Formation section
+
+          \twocolumnsection                                                % Language and Volunteering sectio
+		{\input{section_languages}}
+                     {\input{section_volunteering}}
+        
+	%\input{section_interets}				% Interest section
+	\input{section_projects}				% Projects section
+	%\input{section_references} 			% Referral section
+	\input{section_driver_licenses}			% Driver Licenses section
+
+
+\end{document}
